@@ -20,7 +20,6 @@ case class Person(
 val person = Person("Peter")
 person.prettyPrint
 ```
-...
 ```
 {
   "inventory": {
