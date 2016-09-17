@@ -34,3 +34,8 @@ person.prettyPrint
   "male": true
 }
 ```
+
+## To Do
+
+1. Extend field types. Support Options. Test it further.
+2. Read from JSON back
