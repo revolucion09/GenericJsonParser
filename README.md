@@ -1,11 +1,12 @@
 # reflect_json_processor
 
-Very simple SCALA library based on scala-reflect and spray-json (works as well with akka-spray-json) to seamlessly get JSON out of your case classes
+Very simple SCALA library based on *scala-reflect* and *spray-json* (works as well with akka-spray-json) to seamlessly get JSON out of your case classes
 
-Extend any case class to be serialized into JSON with JsonSerializable and then you can already call into any instance spray json calls such as prettyPrint
+Extend any case class to be serialized into JSON with *JsonSerializable* and then you can already call into any instance spray json calls such as prettyPrint
 
 Example:
 
+```scala
 case class Person(
                     name: String,
                     age: Int = 20,
@@ -17,7 +18,9 @@ case class Person(
 
 val person = Person("Peter")
 person.prettyPrint
+```
 ...
+```
 {
   "inventory": {
     "Chairs": 5,
@@ -29,3 +32,4 @@ person.prettyPrint
   "codes": [0.4, 2.5, 3.1],
   "male": true
 }
+```
