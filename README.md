@@ -7,6 +7,7 @@ Extend any case class to be serialized into JSON with *JsonSerializable* and the
 Example:
 
 ```scala
+import saif.libs.JsonSerializable
 case class Person(
                     name: String,
                     age: Int = 20,
